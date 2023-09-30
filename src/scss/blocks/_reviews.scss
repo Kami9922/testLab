@@ -2,6 +2,13 @@
   margin-bottom: 80px;
   background-color: $Extralight-gray;
   padding-bottom: 40px;
+
+  @include mediaTablet {
+    margin-bottom: 40px;
+  }
+  @include mediaPhone {
+    margin-bottom: 27px;
+  }
 }
 
 

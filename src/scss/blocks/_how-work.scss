@@ -30,6 +30,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  @include mediaPhone {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 .how-work__item {

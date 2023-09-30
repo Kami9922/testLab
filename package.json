@@ -37,6 +37,7 @@
 		"last 5 versions"
 	],
 	"dependencies": {
+		"jquery": "^3.7.1",
 		"swiper": "^10.3.1"
 	}
 }

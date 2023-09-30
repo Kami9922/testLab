@@ -2,12 +2,16 @@
   background-image: 
   linear-gradient(to top,rgba(42, 108, 234, .8), rgba(42, 108, 234, .8)),
   url(../../img/Header/Skyscraper.jpg);
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   color: #fff;
   margin-bottom: 80px;
+
+  @include mediaTablet {
+    margin-bottom: 56px;
+  }
 }
 
 .header__nav {
@@ -15,6 +19,16 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 230px;
+
+  @include mediaTablet {
+    padding: 28 0px;
+  }
+}
+
+.header__menu-nav {
+  @include mediaTablet {
+    display: none;
+  }
 }
 
 .header__nav-list {
@@ -42,6 +56,11 @@
   line-height: 64px;
   font-size: 52px;
   margin-bottom: 18px;
+
+  @include mediaTablet {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .header__switch-subtitle {
@@ -49,6 +68,10 @@
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 92px;
+
+  @include mediaTablet {
+    margin-bottom: 40px;
+  }
 }
 
 .header__switch-button {
@@ -59,6 +82,8 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
+  // width: 250px;
+  // height: 64px;
   padding: 20px 40px;
   margin: 0 auto;
 }

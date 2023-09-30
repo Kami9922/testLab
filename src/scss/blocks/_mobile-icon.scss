@@ -1,0 +1,50 @@
+.mobile-icon {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  z-index: 15;
+  display: none;
+
+  @include mediaTablet {
+    display: block;
+  }
+  
+  &:after,&:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+    transition: all .3s ease;
+  }
+
+  &:before {
+    top: 25px;
+    right: 18px;
+  }
+  
+  &:after {
+    right: 18px;
+    bottom: 25px;
+  }
+}
+
+.mobile-icon--active {
+  &:after,&:before {
+    background-color: $Black;
+    top: 31px;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+  
+  &:after { 
+    transform: rotate(-45deg);
+    
+  }
+}
