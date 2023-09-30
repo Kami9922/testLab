@@ -1,0 +1,33 @@
+.swiper {
+  max-width: 1090px;
+  height: 370px;
+  position: relative;
+
+  @include mediaLaptop {
+    max-width: 850px;
+  }
+  
+  @include mediaTablet {
+    height: auto;
+  }
+  @include mediaPhone {
+    max-width: 340px;
+  }
+}
+
+.swiper-slide {
+  @include mediaTablet {
+    margin-bottom: 40px;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {  
+  @include mediaTablet {
+    position: static;
+    
+  }
+  @include mediaPhone {
+    
+  }
+}
+

@@ -1,15 +1,12 @@
 <section class="reviews">
   <div class="container">
     <div class="reviews__inner">
-      <h2>Отзывы</h2>
-      <ul>
-        <li>
-          <blockquote>
-            <img src="../../img/reviews/ivan.svg" alt="фото пользователя">
-            <cite>Иван Иванов</cite>
-            <p>Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира призваны к ответу.</p>
-          </blockquote>
-        </li>
-      </ul>
+      <h2 class="reviews__title">Отзывы</h2>
+      @@include('./swiper.html')
+      <div class="reviews__swiper-buttons">
+        <div class="prev" id="prev"></div>
+        <div class="next" id="next"></div>
+      </div>
+    </div>
   </div>
 </section>

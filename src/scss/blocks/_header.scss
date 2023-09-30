@@ -2,17 +2,18 @@
   background-image: 
   linear-gradient(to top,rgba(42, 108, 234, .8), rgba(42, 108, 234, .8)),
   url(../../img/Header/Skyscraper.jpg);
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   color: #fff;
   margin-bottom: 80px;
 }
 
 .header__nav {
-  padding: 26px;
+  padding: 26px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 230px;
 }
 

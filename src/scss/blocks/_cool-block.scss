@@ -1,0 +1,85 @@
+.cool-block {
+  margin-bottom: 80px ;
+  @include mediaTablet {
+    margin-bottom: 56px ; 
+  }
+} 
+
+.cool-block__inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @include mediaTablet {
+    gap: 29px;
+  }
+  
+  @include mediaTabletLess {
+    flex-direction: column-reverse;
+    gap: 7px;
+  }
+  @include mediaPhone {
+    gap: 27px;
+  }
+}
+
+.cool-block__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 18px;
+  
+  @include mediaTablet {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  @include mediaTabletLess {
+    margin-bottom: 0px;
+  }
+
+  @include mediaPhone {
+    margin-bottom: 27px;
+  }
+}
+
+.cool-block__text-content {
+
+  @include mediaTablet {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  @include mediaTabletLess {
+    text-align: center;
+  }
+}
+
+.cool-block__text {
+  color: $Dark-gray;
+  font-size: 16px;
+  line-height: 28px;
+
+  &:nth-child(2) {
+    margin-bottom: 30px;
+  }
+}  
+.cool-block__text-deco {
+  background-image: url(../../img/cool-block/income.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mediaTablet {
+    display: flex;
+    flex-basis: 50%;
+  }
+}
+
+.cool-block__text-img {
+
+  @include mediaTablet {
+    width: 100%;
+  }
+}

@@ -1,0 +1,106 @@
+.reviews {
+  margin-bottom: 80px;
+  background-color: $Extralight-gray;
+  padding-bottom: 40px;
+}
+
+
+.reviews__title {
+  text-align: center;
+  padding: 55px 20px 30px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 56px;
+  
+  @include mediaTablet {
+    padding: 32px 20px 30px;
+  }
+  @include mediaTabletLess {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  @include mediaPhone {
+    padding: 26px 20px 26px;
+  }
+}
+
+.reviews__swiper-card {
+  background-color: #fff;
+  display: flex;
+  height: 315px;
+  padding: 22px;
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  
+  @include mediaTablet{
+    height: auto;
+  }
+}
+
+.reviews__swiper-img {
+  height: 44px;
+  width: 44px;
+  margin-right: 16px;
+}
+.reviews__swiper-cardcontent {
+  display: flex;
+  flex-direction: column;
+}
+.reviews__swiper-data {
+  display: flex;
+  margin-bottom: 20px;
+}
+.reviews__swiper-personal {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.reviews__swiper-source {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-style: normal;
+}
+.reviews__swiper-city {
+  color: $Dark-gray;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.reviews__swiper-buttons {
+  display: flex;
+  position: relative;
+  top: -235px;
+
+  @include mediaTablet {
+    display: none;
+  }
+}
+
+.prev,.next {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.prev {
+  left: 0px;
+  background-image: url(../../img/reviews/angle-left.svg);
+  &:hover {
+    background-image: url(../../img/reviews/angle-left--active.svg);
+  }
+}
+.next {
+  right: 0px;
+  background-image: url(../../img/reviews/angle-right.svg);
+  &:hover {
+    background-image: url(../../img/reviews/angle-right--active.svg);
+  }
+}

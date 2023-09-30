@@ -1,6 +1,10 @@
 .how-work {
   color: $Black;
   margin-bottom: 80px;
+  
+  @include mediaTablet {
+    margin-bottom: 56px;
+  }
 }
 
 .how-work__title {
@@ -9,12 +13,23 @@
   font-weight: 600;
   line-height: 56px;
   margin-bottom: 60px;
+  
+  @include mediaTablet {
+    margin-bottom: 42px;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .how-work__items {
   display: flex;
   justify-content: space-between;
   gap: 32px;
+  
+  @include mediaTablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .how-work__item {
@@ -22,6 +37,16 @@
   flex-direction: column;
   line-height: 24px;
   flex-basis: 280px;
+
+  @include mediaTablet {
+    flex-direction: row;
+  }
+}
+
+.how-work__item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .how-work__item-img {
@@ -29,6 +54,12 @@
   width: 72px;
   flex-shrink: 0;
   margin-bottom: 16px;
+
+  @include mediaTablet {
+    margin-right: 16px;
+    height: 56px;
+    width: 56px;
+  }
 }
 
 .how-work__item-title {
