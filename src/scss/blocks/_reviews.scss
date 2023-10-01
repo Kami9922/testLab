@@ -99,15 +99,15 @@
 
 .prev {
   left: 0px;
-  background-image: url(../../img/reviews/angle-left.svg);
+  background-image: url(../img/reviews/angle-left.svg);
   &:hover {
-    background-image: url(../../img/reviews/angle-left--active.svg);
+    background-image: url(../img/reviews/angle-left--active.svg);
   }
 }
 .next {
   right: 0px;
-  background-image: url(../../img/reviews/angle-right.svg);
+  background-image: url(../img/reviews/angle-right.svg);
   &:hover {
-    background-image: url(../../img/reviews/angle-right--active.svg);
+    background-image: url(../img/reviews/angle-right--active.svg);
   }
 }
